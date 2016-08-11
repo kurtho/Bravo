@@ -1,0 +1,418 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		29E981881D5B23DD00447AE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E981871D5B23DD00447AE2 /* AppDelegate.swift */; };
+		29E9818D1D5B23DD00447AE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29E9818B1D5B23DD00447AE2 /* Main.storyboard */; };
+		29E9818F1D5B23DD00447AE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29E9818E1D5B23DD00447AE2 /* Assets.xcassets */; };
+		29E981921D5B23DD00447AE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29E981901D5B23DD00447AE2 /* LaunchScreen.storyboard */; };
+		29E9819C1D5B26B400447AE2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E9819B1D5B26B400447AE2 /* LoginViewController.swift */; };
+		29E9819E1D5B2A2600447AE2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 29E9819D1D5B2A2600447AE2 /* GoogleService-Info.plist */; };
+		29E981A11D5B340500447AE2 /* FBLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E981A01D5B340500447AE2 /* FBLogin.m */; };
+		29E981A61D5BE3DF00447AE2 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29E981A31D5BE3DF00447AE2 /* FBSDKCoreKit.framework */; };
+		29E981A71D5BE3DF00447AE2 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29E981A41D5BE3DF00447AE2 /* FBSDKLoginKit.framework */; };
+		29E981A81D5BE3DF00447AE2 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29E981A51D5BE3DF00447AE2 /* FBSDKShareKit.framework */; };
+		F782167942E4F96F71072B58 /* Pods_Bravo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C62446F6BA8D066C8394E6C7 /* Pods_Bravo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		29E981841D5B23DD00447AE2 /* Bravo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bravo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		29E981871D5B23DD00447AE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		29E9818C1D5B23DD00447AE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		29E9818E1D5B23DD00447AE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		29E981911D5B23DD00447AE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		29E981931D5B23DD00447AE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29E9819B1D5B26B400447AE2 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		29E9819D1D5B2A2600447AE2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		29E9819F1D5B340400447AE2 /* Bravo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bravo-Bridging-Header.h"; sourceTree = "<group>"; };
+		29E981A01D5B340500447AE2 /* FBLogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBLogin.m; sourceTree = "<group>"; };
+		29E981A31D5BE3DF00447AE2 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = Bravo/FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		29E981A41D5BE3DF00447AE2 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = Bravo/FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		29E981A51D5BE3DF00447AE2 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = Bravo/FBSDKShareKit.framework; sourceTree = "<group>"; };
+		C62446F6BA8D066C8394E6C7 /* Pods_Bravo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bravo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA324985353DF1E5A58003E4 /* Pods-Bravo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bravo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bravo/Pods-Bravo.release.xcconfig"; sourceTree = "<group>"; };
+		F220E0FA24D387F776DE63F7 /* Pods-Bravo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bravo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bravo/Pods-Bravo.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		29E981811D5B23DD00447AE2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29E981A81D5BE3DF00447AE2 /* FBSDKShareKit.framework in Frameworks */,
+				F782167942E4F96F71072B58 /* Pods_Bravo.framework in Frameworks */,
+				29E981A61D5BE3DF00447AE2 /* FBSDKCoreKit.framework in Frameworks */,
+				29E981A71D5BE3DF00447AE2 /* FBSDKLoginKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		10FFF632FA6AC18E452C560A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F220E0FA24D387F776DE63F7 /* Pods-Bravo.debug.xcconfig */,
+				EA324985353DF1E5A58003E4 /* Pods-Bravo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		29E9817B1D5B23DD00447AE2 = {
+			isa = PBXGroup;
+			children = (
+				29E981861D5B23DD00447AE2 /* Bravo */,
+				29E981851D5B23DD00447AE2 /* Products */,
+				10FFF632FA6AC18E452C560A /* Pods */,
+				8253341EF5443E3A7FD16F9D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		29E981851D5B23DD00447AE2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				29E981841D5B23DD00447AE2 /* Bravo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29E981861D5B23DD00447AE2 /* Bravo */ = {
+			isa = PBXGroup;
+			children = (
+				29E981871D5B23DD00447AE2 /* AppDelegate.swift */,
+				29E9818B1D5B23DD00447AE2 /* Main.storyboard */,
+				29E9819B1D5B26B400447AE2 /* LoginViewController.swift */,
+				29E9818E1D5B23DD00447AE2 /* Assets.xcassets */,
+				29E981901D5B23DD00447AE2 /* LaunchScreen.storyboard */,
+				29E9819D1D5B2A2600447AE2 /* GoogleService-Info.plist */,
+				29E981931D5B23DD00447AE2 /* Info.plist */,
+				29E981A21D5B342B00447AE2 /* Other */,
+			);
+			path = Bravo;
+			sourceTree = "<group>";
+		};
+		29E981A21D5B342B00447AE2 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				29E9819F1D5B340400447AE2 /* Bravo-Bridging-Header.h */,
+				29E981A01D5B340500447AE2 /* FBLogin.m */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+		8253341EF5443E3A7FD16F9D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29E981A31D5BE3DF00447AE2 /* FBSDKCoreKit.framework */,
+				29E981A41D5BE3DF00447AE2 /* FBSDKLoginKit.framework */,
+				29E981A51D5BE3DF00447AE2 /* FBSDKShareKit.framework */,
+				C62446F6BA8D066C8394E6C7 /* Pods_Bravo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		29E981831D5B23DD00447AE2 /* Bravo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 29E981961D5B23DD00447AE2 /* Build configuration list for PBXNativeTarget "Bravo" */;
+			buildPhases = (
+				1FC4FD40F292CE30514CEDB9 /* [CP] Check Pods Manifest.lock */,
+				29E981801D5B23DD00447AE2 /* Sources */,
+				29E981811D5B23DD00447AE2 /* Frameworks */,
+				29E981821D5B23DD00447AE2 /* Resources */,
+				03D00479BC34F3EA9F796B63 /* [CP] Embed Pods Frameworks */,
+				3A437A67AD3D4E75575B493E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Bravo;
+			productName = Bravo;
+			productReference = 29E981841D5B23DD00447AE2 /* Bravo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29E9817C1D5B23DD00447AE2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Kurt;
+				TargetAttributes = {
+					29E981831D5B23DD00447AE2 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 29E9817F1D5B23DD00447AE2 /* Build configuration list for PBXProject "Bravo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 29E9817B1D5B23DD00447AE2;
+			productRefGroup = 29E981851D5B23DD00447AE2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				29E981831D5B23DD00447AE2 /* Bravo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		29E981821D5B23DD00447AE2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29E981921D5B23DD00447AE2 /* LaunchScreen.storyboard in Resources */,
+				29E9819E1D5B2A2600447AE2 /* GoogleService-Info.plist in Resources */,
+				29E9818F1D5B23DD00447AE2 /* Assets.xcassets in Resources */,
+				29E9818D1D5B23DD00447AE2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		03D00479BC34F3EA9F796B63 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Bravo/Pods-Bravo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1FC4FD40F292CE30514CEDB9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3A437A67AD3D4E75575B493E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Bravo/Pods-Bravo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		29E981801D5B23DD00447AE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29E9819C1D5B26B400447AE2 /* LoginViewController.swift in Sources */,
+				29E981881D5B23DD00447AE2 /* AppDelegate.swift in Sources */,
+				29E981A11D5B340500447AE2 /* FBLogin.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		29E9818B1D5B23DD00447AE2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				29E9818C1D5B23DD00447AE2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		29E981901D5B23DD00447AE2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				29E981911D5B23DD00447AE2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		29E981941D5B23DD00447AE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		29E981951D5B23DD00447AE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		29E981971D5B23DD00447AE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F220E0FA24D387F776DE63F7 /* Pods-Bravo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Bravo",
+					"~/Documents/FacebookSDK",
+				);
+				INFOPLIST_FILE = Bravo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.self.Bravo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Bravo/Bravo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		29E981981D5B23DD00447AE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA324985353DF1E5A58003E4 /* Pods-Bravo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Bravo",
+					"~/Documents/FacebookSDK",
+				);
+				INFOPLIST_FILE = Bravo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.self.Bravo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Bravo/Bravo-Bridging-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		29E9817F1D5B23DD00447AE2 /* Build configuration list for PBXProject "Bravo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29E981941D5B23DD00447AE2 /* Debug */,
+				29E981951D5B23DD00447AE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		29E981961D5B23DD00447AE2 /* Build configuration list for PBXNativeTarget "Bravo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29E981971D5B23DD00447AE2 /* Debug */,
+				29E981981D5B23DD00447AE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29E9817C1D5B23DD00447AE2 /* Project object */;
+}
