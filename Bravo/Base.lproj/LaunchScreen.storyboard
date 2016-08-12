@@ -24,11 +24,20 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="me" translatesAutoresizingMaskIntoConstraints="NO" id="SzT-mu-11t">
+                                <rect key="frame" x="200" y="49" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="4Wx-5p-Cc5"/>
+                                    <constraint firstAttribute="width" constant="200" id="dRX-Vv-JF6"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="SzT-mu-11t" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="0wZ-l9-mkN"/>
                             <constraint firstItem="mX3-vS-1LO" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="7gh-Nw-yyL"/>
                             <constraint firstItem="mX3-vS-1LO" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="E03-xf-XOJ"/>
+                            <constraint firstItem="mX3-vS-1LO" firstAttribute="top" secondItem="SzT-mu-11t" secondAttribute="bottom" constant="36" id="OHn-ua-Rqe"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -36,4 +45,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="me" width="2048" height="1536"/>
+    </resources>
 </document>

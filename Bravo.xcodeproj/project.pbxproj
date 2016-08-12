@@ -17,7 +17,9 @@
 		29E981A61D5BE3DF00447AE2 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29E981A31D5BE3DF00447AE2 /* FBSDKCoreKit.framework */; };
 		29E981A71D5BE3DF00447AE2 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29E981A41D5BE3DF00447AE2 /* FBSDKLoginKit.framework */; };
 		29E981A81D5BE3DF00447AE2 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29E981A51D5BE3DF00447AE2 /* FBSDKShareKit.framework */; };
-		F782167942E4F96F71072B58 /* Pods_Bravo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C62446F6BA8D066C8394E6C7 /* Pods_Bravo.framework */; };
+		29E981AB1D5D8CDC00447AE2 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E981AA1D5D8CDC00447AE2 /* IntroViewController.swift */; };
+		29E981AF1D5D932900447AE2 /* IntroCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E981AE1D5D932900447AE2 /* IntroCollectionViewCell.swift */; };
+		A2823F0D444CF39413A31133 /* Pods_Bravo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF3376FEC1F75844D247CE0C /* Pods_Bravo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,8 +36,10 @@
 		29E981A31D5BE3DF00447AE2 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = Bravo/FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		29E981A41D5BE3DF00447AE2 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = Bravo/FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		29E981A51D5BE3DF00447AE2 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = Bravo/FBSDKShareKit.framework; sourceTree = "<group>"; };
-		C62446F6BA8D066C8394E6C7 /* Pods_Bravo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bravo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		29E981AA1D5D8CDC00447AE2 /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		29E981AE1D5D932900447AE2 /* IntroCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroCollectionViewCell.swift; sourceTree = "<group>"; };
 		EA324985353DF1E5A58003E4 /* Pods-Bravo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bravo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bravo/Pods-Bravo.release.xcconfig"; sourceTree = "<group>"; };
+		EF3376FEC1F75844D247CE0C /* Pods_Bravo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bravo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F220E0FA24D387F776DE63F7 /* Pods-Bravo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bravo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bravo/Pods-Bravo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -45,9 +49,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				29E981A81D5BE3DF00447AE2 /* FBSDKShareKit.framework in Frameworks */,
-				F782167942E4F96F71072B58 /* Pods_Bravo.framework in Frameworks */,
 				29E981A61D5BE3DF00447AE2 /* FBSDKCoreKit.framework in Frameworks */,
 				29E981A71D5BE3DF00447AE2 /* FBSDKLoginKit.framework in Frameworks */,
+				A2823F0D444CF39413A31133 /* Pods_Bravo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,9 +88,9 @@
 		29E981861D5B23DD00447AE2 /* Bravo */ = {
 			isa = PBXGroup;
 			children = (
-				29E981871D5B23DD00447AE2 /* AppDelegate.swift */,
 				29E9818B1D5B23DD00447AE2 /* Main.storyboard */,
-				29E9819B1D5B26B400447AE2 /* LoginViewController.swift */,
+				29E981871D5B23DD00447AE2 /* AppDelegate.swift */,
+				29E981A91D5D8C9200447AE2 /* Login */,
 				29E981A21D5B342B00447AE2 /* Other */,
 			);
 			path = Bravo;
@@ -105,13 +109,23 @@
 			name = Other;
 			sourceTree = "<group>";
 		};
+		29E981A91D5D8C9200447AE2 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				29E9819B1D5B26B400447AE2 /* LoginViewController.swift */,
+				29E981AA1D5D8CDC00447AE2 /* IntroViewController.swift */,
+				29E981AE1D5D932900447AE2 /* IntroCollectionViewCell.swift */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
 		8253341EF5443E3A7FD16F9D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				29E981A31D5BE3DF00447AE2 /* FBSDKCoreKit.framework */,
 				29E981A41D5BE3DF00447AE2 /* FBSDKLoginKit.framework */,
 				29E981A51D5BE3DF00447AE2 /* FBSDKShareKit.framework */,
-				C62446F6BA8D066C8394E6C7 /* Pods_Bravo.framework */,
+				EF3376FEC1F75844D247CE0C /* Pods_Bravo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -239,9 +253,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29E981AF1D5D932900447AE2 /* IntroCollectionViewCell.swift in Sources */,
 				29E9819C1D5B26B400447AE2 /* LoginViewController.swift in Sources */,
 				29E981881D5B23DD00447AE2 /* AppDelegate.swift in Sources */,
 				29E981A11D5B340500447AE2 /* FBLogin.m in Sources */,
+				29E981AB1D5D8CDC00447AE2 /* IntroViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,11 +374,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Bravo",
-					"~/Documents/FacebookSDK",
-				);
 				INFOPLIST_FILE = Bravo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.self.Bravo;
@@ -378,11 +389,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Bravo",
-					"~/Documents/FacebookSDK",
-				);
 				INFOPLIST_FILE = Bravo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.self.Bravo;
