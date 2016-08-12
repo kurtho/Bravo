@@ -43,6 +43,18 @@ extension IntroViewController: UICollectionViewDataSource, UICollectionViewDeleg
         return cell
     }
     
+    
+    
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize
+    {
+        let screenSize: CGRect = UIScreen.mainScreen().bounds
+
+        return CGSize(width: screenSize.width, height: screenSize.width * 1.5)
+    }
+    
+    
+    
+
 }
 
 
