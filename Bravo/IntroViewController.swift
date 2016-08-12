@@ -10,10 +10,12 @@ import UIKit
 
 class IntroViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var pageControl: UIPageControl!
+    @IBOutlet weak var nextButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        nextButton.hidden = true
 
     }
 
@@ -49,10 +51,17 @@ extension IntroViewController: UICollectionViewDataSource, UICollectionViewDeleg
     {
         let screenSize: CGRect = UIScreen.mainScreen().bounds
 
-        return CGSize(width: screenSize.width, height: screenSize.width * 1.5)
+        return CGSize(width: screenSize.width, height: screenSize.width * 1.3)
     }
     
     
+    func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
+        let pageNum = round(scrollView.contentOffset.x / scrollView.frame.size.width)
+        self.pageControl!.currentPage = Int(pageNum)
+        if self.pageControl!.currentPage == 2 {
+            nextButton.hidden = false
+        }
+    }
     
 
 }
@@ -61,9 +70,9 @@ extension IntroViewController: UICollectionViewDataSource, UICollectionViewDeleg
 
 class IntroContent {
     static let contents = [
-        IntroContent(myImage: "moon", myLabel: "測試一"),
-        IntroContent(myImage: "me", myLabel: "測試二"),
-        IntroContent(myImage: "moon", myLabel: "測試三")
+        IntroContent(myImage: "moon", myLabel: "警告標語一"),
+        IntroContent(myImage: "me", myLabel: "注意事項二"),
+        IntroContent(myImage: "hualien", myLabel: "使用說明三")
     ]
     let myImage: String
     let myLabel: String

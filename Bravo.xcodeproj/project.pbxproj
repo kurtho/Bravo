@@ -113,8 +113,8 @@
 			isa = PBXGroup;
 			children = (
 				29E9819B1D5B26B400447AE2 /* LoginViewController.swift */,
-				291D20A01D5D958D00FD8BB1 /* IntroPageCollectionViewCell.swift */,
 				29E981AA1D5D8CDC00447AE2 /* IntroViewController.swift */,
+				291D20A01D5D958D00FD8BB1 /* IntroPageCollectionViewCell.swift */,
 			);
 			name = Login;
 			sourceTree = "<group>";

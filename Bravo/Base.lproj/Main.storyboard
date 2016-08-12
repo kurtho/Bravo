@@ -31,6 +31,7 @@
                                         </pageControl>
                                         <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="OJ7-rF-kCR">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="530"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="nG9-ep-7bl">
                                                 <size key="itemSize" width="326" height="456"/>
                                                 <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -49,8 +50,8 @@
                                                                 <rect key="frame" x="0.0" y="0.0" width="326" height="416"/>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YFb-wd-Wfd">
-                                                                <rect key="frame" x="142" y="427" width="42" height="21"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <rect key="frame" x="139.5" y="427" width="47.5" height="21"/>
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
@@ -76,9 +77,15 @@
                                                 <outlet property="delegate" destination="q2A-lo-L0i" id="GzZ-XH-XI0"/>
                                             </connections>
                                         </collectionView>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HAB-4W-0cB">
+                                            <rect key="frame" x="522" y="549" width="46" height="30"/>
+                                            <state key="normal" title="Button"/>
+                                        </button>
                                     </subviews>
                                     <constraints>
                                         <constraint firstAttribute="trailing" secondItem="OJ7-rF-kCR" secondAttribute="trailing" id="2RW-0U-WdR"/>
+                                        <constraint firstAttribute="bottom" secondItem="HAB-4W-0cB" secondAttribute="bottom" constant="21" id="319-LB-78Y"/>
+                                        <constraint firstAttribute="trailing" secondItem="HAB-4W-0cB" secondAttribute="trailing" constant="32" id="7KL-Gq-sFi"/>
                                         <constraint firstItem="OJ7-rF-kCR" firstAttribute="top" secondItem="c1p-uf-ms6" secondAttribute="top" id="DtH-Em-LtB"/>
                                         <constraint firstItem="OJ7-rF-kCR" firstAttribute="leading" secondItem="c1p-uf-ms6" secondAttribute="leading" id="Rvl-jx-yji"/>
                                         <constraint firstItem="iKH-IF-pRG" firstAttribute="centerX" secondItem="c1p-uf-ms6" secondAttribute="centerX" id="XFY-5Q-EjP"/>
@@ -103,6 +110,8 @@
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="OJ7-rF-kCR" id="DCL-MZ-Mru"/>
+                        <outlet property="nextButton" destination="HAB-4W-0cB" id="gVZ-Y1-8Rf"/>
+                        <outlet property="pageControl" destination="iKH-IF-pRG" id="VQv-tK-gGi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9b3-ZC-6UZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
