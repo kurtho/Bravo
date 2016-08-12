@@ -87,10 +87,6 @@
 				29E981871D5B23DD00447AE2 /* AppDelegate.swift */,
 				29E9818B1D5B23DD00447AE2 /* Main.storyboard */,
 				29E9819B1D5B26B400447AE2 /* LoginViewController.swift */,
-				29E9818E1D5B23DD00447AE2 /* Assets.xcassets */,
-				29E981901D5B23DD00447AE2 /* LaunchScreen.storyboard */,
-				29E9819D1D5B2A2600447AE2 /* GoogleService-Info.plist */,
-				29E981931D5B23DD00447AE2 /* Info.plist */,
 				29E981A21D5B342B00447AE2 /* Other */,
 			);
 			path = Bravo;
@@ -99,6 +95,10 @@
 		29E981A21D5B342B00447AE2 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				29E9818E1D5B23DD00447AE2 /* Assets.xcassets */,
+				29E981901D5B23DD00447AE2 /* LaunchScreen.storyboard */,
+				29E9819D1D5B2A2600447AE2 /* GoogleService-Info.plist */,
+				29E981931D5B23DD00447AE2 /* Info.plist */,
 				29E9819F1D5B340400447AE2 /* Bravo-Bridging-Header.h */,
 				29E981A01D5B340500447AE2 /* FBLogin.m */,
 			);
