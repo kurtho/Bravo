@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		291D20A11D5D958D00FD8BB1 /* IntroPageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291D20A01D5D958D00FD8BB1 /* IntroPageCollectionViewCell.swift */; };
 		29E981881D5B23DD00447AE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E981871D5B23DD00447AE2 /* AppDelegate.swift */; };
 		29E9818D1D5B23DD00447AE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29E9818B1D5B23DD00447AE2 /* Main.storyboard */; };
 		29E9818F1D5B23DD00447AE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29E9818E1D5B23DD00447AE2 /* Assets.xcassets */; };
@@ -18,11 +19,11 @@
 		29E981A71D5BE3DF00447AE2 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29E981A41D5BE3DF00447AE2 /* FBSDKLoginKit.framework */; };
 		29E981A81D5BE3DF00447AE2 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29E981A51D5BE3DF00447AE2 /* FBSDKShareKit.framework */; };
 		29E981AB1D5D8CDC00447AE2 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E981AA1D5D8CDC00447AE2 /* IntroViewController.swift */; };
-		29E981AF1D5D932900447AE2 /* IntroCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E981AE1D5D932900447AE2 /* IntroCollectionViewCell.swift */; };
 		A2823F0D444CF39413A31133 /* Pods_Bravo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF3376FEC1F75844D247CE0C /* Pods_Bravo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		291D20A01D5D958D00FD8BB1 /* IntroPageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroPageCollectionViewCell.swift; sourceTree = "<group>"; };
 		29E981841D5B23DD00447AE2 /* Bravo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bravo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29E981871D5B23DD00447AE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		29E9818C1D5B23DD00447AE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -37,7 +38,6 @@
 		29E981A41D5BE3DF00447AE2 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = Bravo/FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		29E981A51D5BE3DF00447AE2 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = Bravo/FBSDKShareKit.framework; sourceTree = "<group>"; };
 		29E981AA1D5D8CDC00447AE2 /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
-		29E981AE1D5D932900447AE2 /* IntroCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroCollectionViewCell.swift; sourceTree = "<group>"; };
 		EA324985353DF1E5A58003E4 /* Pods-Bravo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bravo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bravo/Pods-Bravo.release.xcconfig"; sourceTree = "<group>"; };
 		EF3376FEC1F75844D247CE0C /* Pods_Bravo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bravo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F220E0FA24D387F776DE63F7 /* Pods-Bravo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bravo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bravo/Pods-Bravo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -113,8 +113,8 @@
 			isa = PBXGroup;
 			children = (
 				29E9819B1D5B26B400447AE2 /* LoginViewController.swift */,
+				291D20A01D5D958D00FD8BB1 /* IntroPageCollectionViewCell.swift */,
 				29E981AA1D5D8CDC00447AE2 /* IntroViewController.swift */,
-				29E981AE1D5D932900447AE2 /* IntroCollectionViewCell.swift */,
 			);
 			name = Login;
 			sourceTree = "<group>";
@@ -253,10 +253,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29E981AF1D5D932900447AE2 /* IntroCollectionViewCell.swift in Sources */,
 				29E9819C1D5B26B400447AE2 /* LoginViewController.swift in Sources */,
 				29E981881D5B23DD00447AE2 /* AppDelegate.swift in Sources */,
 				29E981A11D5B340500447AE2 /* FBLogin.m in Sources */,
+				291D20A11D5D958D00FD8BB1 /* IntroPageCollectionViewCell.swift in Sources */,
 				29E981AB1D5D8CDC00447AE2 /* IntroViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
